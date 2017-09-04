@@ -1,0 +1,245 @@
+[
+  {
+    "id": "1",
+    "title": "HTML 1: Introducing HTML",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:03:32.674528",
+    "updated_at": "03/14/2014 02:03:32.674528"
+  },
+  {
+    "id": "3",
+    "title": "HTML/CSS 3: Beyond the basics",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:04:04.52685",
+    "updated_at": "03/14/2014 02:04:04.52685"
+  },
+  {
+    "id": "4",
+    "title": "HTML/CSS 4: CSS, layouts and formatting",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:04:16.181562",
+    "updated_at": "03/14/2014 02:04:16.181562"
+  },
+  {
+    "id": "5",
+    "title": "HTML/CSS 5: Dive into HTML5 & CSS3",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:04:26.510333",
+    "updated_at": "03/14/2014 02:04:26.510333"
+  },
+  {
+    "id": "6",
+    "title": "HTML/CSS 6: Advanced HTML5",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:04:37.025836",
+    "updated_at": "03/14/2014 02:04:37.025836"
+  },
+  {
+    "id": "7",
+    "title": "Introduction to version control",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:04:45.685343",
+    "updated_at": "03/14/2014 02:04:45.685343"
+  },
+  {
+    "id": "8",
+    "title": "JS: Introduction to JavaScript",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:05:53.827593",
+    "updated_at": "03/14/2014 02:05:53.827593"
+  },
+  {
+    "id": "9",
+    "title": "JS: Beginning JavaScript",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:06:04.397124",
+    "updated_at": "03/14/2014 02:06:04.397124"
+  },
+  {
+    "id": "10",
+    "title": "JS: Introduction to JQuery",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:06:12.568483",
+    "updated_at": "03/14/2014 02:06:12.568483"
+  },
+  {
+    "id": "11",
+    "title": "JS: HTTP Requests, AJAX and APIs",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:06:20.468994",
+    "updated_at": "03/14/2014 02:06:20.468994"
+  },
+  {
+    "id": "12",
+    "title": "JS: HTTP Requests, AJAX and APIs (part 2)",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:07:31.580845",
+    "updated_at": "03/14/2014 02:07:31.580845"
+  },
+  {
+    "id": "13",
+    "title": "JS: Drawing in Canvas",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:07:42.129803",
+    "updated_at": "03/14/2014 02:07:42.129803"
+  },
+  {
+    "id": "14",
+    "title": "JS: Introduction to Testing",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:07:49.594123",
+    "updated_at": "03/14/2014 02:07:49.594123"
+  },
+  {
+    "id": "15",
+    "title": "JS: Building your own app",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:07:55.791329",
+    "updated_at": "03/14/2014 02:07:55.791329"
+  },
+  {
+    "id": "16",
+    "title": "Ruby: Introduction to Ruby",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:08:05.975563",
+    "updated_at": "03/14/2014 02:08:05.975563"
+  },
+  {
+    "id": "17",
+    "title": "Ruby: Ruby Basics",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:08:12.174884",
+    "updated_at": "03/14/2014 02:08:12.174884"
+  },
+  {
+    "id": "18",
+    "title": "Ruby: Ruby Basics (part 2)",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:08:19.048315",
+    "updated_at": "03/14/2014 02:08:19.048315"
+  },
+  {
+    "id": "19",
+    "title": "Ruby: Object Oriented Ruby and Inheritance",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:08:26.753571",
+    "updated_at": "03/14/2014 02:08:26.753571"
+  },
+  {
+    "id": "20",
+    "title": "Other",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:11:10.70782",
+    "updated_at": "02/12/2015 12:56:02.295618"
+  },
+  {
+    "id": "21",
+    "title": "Rails Project",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/12/2015 12:56:24.326931",
+    "updated_at": "02/12/2015 12:56:24.326931"
+  },
+  {
+    "id": "22",
+    "title": "JavaScript Project",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/12/2015 12:56:38.614533",
+    "updated_at": "02/12/2015 12:56:38.614533"
+  },
+  {
+    "id": "23",
+    "title": "Other programming language",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/12/2015 12:59:42.698659",
+    "updated_at": "02/12/2015 12:59:42.698659"
+  },
+  {
+    "id": "24",
+    "title": "Python",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/13/2015 05:54:44.768525",
+    "updated_at": "02/13/2015 05:54:44.768525"
+  },
+  {
+    "id": "25",
+    "title": "I don't know, I'm a complete beginner.",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/13/2015 06:01:03.772324",
+    "updated_at": "02/13/2015 06:01:03.772324"
+  },
+  {
+    "id": "26",
+    "title": "Java",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/13/2015 06:02:08.549987",
+    "updated_at": "02/13/2015 06:02:08.549987"
+  },
+  {
+    "id": "27",
+    "title": "HTML/CSS/JS Project",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "02/19/2015 15:25:58.10106",
+    "updated_at": "02/19/2015 15:25:58.10106"
+  },
+  {
+    "id": "2",
+    "title": "HTML/CSS 2: Introducing CSS",
+    "description": "",
+    "url": "",
+    "workshop_id": "",
+    "created_at": "03/14/2014 02:03:53.028336",
+    "updated_at": "03/06/2016 04:02:08.926972"
+  }
+]

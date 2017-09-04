@@ -1,0 +1,326 @@
+[
+  {
+    "id": "1",
+    "chapter_id": "1",
+    "name": "Students",
+    "description": "",
+    "created_at": "06/21/2014 15:52:40.138314",
+    "updated_at": "02/25/2015 02:48:57.186613",
+    "mailing_list_id": "7a20a96de0"
+  },
+  {
+    "id": "2",
+    "chapter_id": "1",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "06/21/2014 15:52:44.751974",
+    "updated_at": "02/25/2015 02:49:24.392095",
+    "mailing_list_id": "ae9d281383"
+  },
+  {
+    "id": "3",
+    "chapter_id": "2",
+    "name": "Students",
+    "description": "",
+    "created_at": "06/21/2014 15:52:51.917028",
+    "updated_at": "02/25/2015 02:49:55.189475",
+    "mailing_list_id": "670a818733"
+  },
+  {
+    "id": "4",
+    "chapter_id": "2",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "06/21/2014 15:52:58.169353",
+    "updated_at": "02/25/2015 02:50:30.224839",
+    "mailing_list_id": "6dbdc0aca4"
+  },
+  {
+    "id": "5",
+    "chapter_id": "3",
+    "name": "Students",
+    "description": "",
+    "created_at": "08/24/2014 19:40:55.166378",
+    "updated_at": "02/25/2015 02:50:51.798958",
+    "mailing_list_id": "463f8bcb1c"
+  },
+  {
+    "id": "6",
+    "chapter_id": "3",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "08/24/2014 19:41:00.497664",
+    "updated_at": "02/25/2015 02:51:14.431518",
+    "mailing_list_id": "1854d18f21"
+  },
+  {
+    "id": "7",
+    "chapter_id": "4",
+    "name": "Students",
+    "description": "",
+    "created_at": "10/30/2014 14:41:57.174307",
+    "updated_at": "02/25/2015 02:51:44.563852",
+    "mailing_list_id": "c718ab7d8a"
+  },
+  {
+    "id": "8",
+    "chapter_id": "4",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "10/30/2014 14:42:04.652793",
+    "updated_at": "02/25/2015 02:52:07.677505",
+    "mailing_list_id": "6054b256e8"
+  },
+  {
+    "id": "9",
+    "chapter_id": "5",
+    "name": "Students",
+    "description": "Codebar Birmingham students",
+    "created_at": "02/13/2015 18:32:41.147644",
+    "updated_at": "02/25/2015 02:52:32.845948",
+    "mailing_list_id": "d56550f1a6"
+  },
+  {
+    "id": "10",
+    "chapter_id": "5",
+    "name": "Coaches",
+    "description": "Codebar Birmingham coaches",
+    "created_at": "02/13/2015 18:32:51.078841",
+    "updated_at": "02/25/2015 02:52:51.597028",
+    "mailing_list_id": "8a64fdd7f2"
+  },
+  {
+    "id": "11",
+    "chapter_id": "6",
+    "name": "Students",
+    "description": "Students New York",
+    "created_at": "02/20/2015 13:39:20.952774",
+    "updated_at": "02/25/2015 02:53:04.753903",
+    "mailing_list_id": "a7e69a0d02"
+  },
+  {
+    "id": "12",
+    "chapter_id": "6",
+    "name": "Coaches",
+    "description": "Coaches New York",
+    "created_at": "02/20/2015 13:39:32.551453",
+    "updated_at": "02/25/2015 02:53:16.659817",
+    "mailing_list_id": "1c816d898c"
+  },
+  {
+    "id": "13",
+    "chapter_id": "7",
+    "name": "Students",
+    "description": "South London Students",
+    "created_at": "02/26/2015 22:16:23.322046",
+    "updated_at": "02/26/2015 22:18:03.814305",
+    "mailing_list_id": "df13739ab8"
+  },
+  {
+    "id": "14",
+    "chapter_id": "7",
+    "name": "Coaches",
+    "description": "South London Coaches",
+    "created_at": "02/26/2015 22:16:39.817118",
+    "updated_at": "02/26/2015 22:19:36.180468",
+    "mailing_list_id": "33713b2f58"
+  },
+  {
+    "id": "15",
+    "chapter_id": "8",
+    "name": "Students",
+    "description": "",
+    "created_at": "05/06/2015 19:56:09.595698",
+    "updated_at": "05/06/2015 20:03:49.474196",
+    "mailing_list_id": "8cad90c5d9"
+  },
+  {
+    "id": "16",
+    "chapter_id": "8",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "05/06/2015 19:56:28.923633",
+    "updated_at": "05/06/2015 21:34:26.775937",
+    "mailing_list_id": "77c69f3dc2"
+  },
+  {
+    "id": "18",
+    "chapter_id": "9",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "05/19/2015 11:25:14.011723",
+    "updated_at": "05/19/2015 11:26:13.260105",
+    "mailing_list_id": "39bac1c1fc"
+  },
+  {
+    "id": "17",
+    "chapter_id": "9",
+    "name": "Students",
+    "description": "",
+    "created_at": "05/19/2015 11:25:01.609274",
+    "updated_at": "05/19/2015 11:26:55.480847",
+    "mailing_list_id": "fbb74a0f30"
+  },
+  {
+    "id": "20",
+    "chapter_id": "12",
+    "name": "Students",
+    "description": "Bournemouth",
+    "created_at": "08/26/2015 19:32:55.580962",
+    "updated_at": "08/26/2015 19:32:55.580962",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "21",
+    "chapter_id": "12",
+    "name": "Coaches",
+    "description": "Bournemouth",
+    "created_at": "08/26/2015 19:33:10.095675",
+    "updated_at": "08/26/2015 19:33:10.095675",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "22",
+    "chapter_id": "13",
+    "name": "Students",
+    "description": "",
+    "created_at": "09/11/2015 21:38:47.64177",
+    "updated_at": "09/11/2015 21:38:47.64177",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "23",
+    "chapter_id": "13",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "09/11/2015 21:39:14.373596",
+    "updated_at": "09/11/2015 21:39:14.373596",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "24",
+    "chapter_id": "14",
+    "name": "Students",
+    "description": "",
+    "created_at": "06/04/2016 13:37:15.240642",
+    "updated_at": "06/04/2016 13:37:15.240642",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "25",
+    "chapter_id": "14",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "06/04/2016 13:37:36.52907",
+    "updated_at": "06/04/2016 13:37:36.52907",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "26",
+    "chapter_id": "16",
+    "name": "Students",
+    "description": "",
+    "created_at": "07/22/2016 11:32:33.972772",
+    "updated_at": "07/22/2016 11:32:33.972772",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "27",
+    "chapter_id": "16",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "07/22/2016 11:32:38.919232",
+    "updated_at": "07/22/2016 11:32:38.919232",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "28",
+    "chapter_id": "15",
+    "name": "Students",
+    "description": "codebar Barcelona students group",
+    "created_at": "07/27/2016 11:51:38.765338",
+    "updated_at": "07/27/2016 11:51:38.765338",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "29",
+    "chapter_id": "15",
+    "name": "Coaches",
+    "description": "codebar Barcelona coaches chapter",
+    "created_at": "07/27/2016 11:52:38.294595",
+    "updated_at": "07/27/2016 11:52:38.294595",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "30",
+    "chapter_id": "17",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "08/10/2016 15:50:29.202318",
+    "updated_at": "08/10/2016 15:50:29.202318",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "31",
+    "chapter_id": "17",
+    "name": "Students",
+    "description": "",
+    "created_at": "08/10/2016 15:50:44.313405",
+    "updated_at": "08/10/2016 15:50:44.313405",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "32",
+    "chapter_id": "18",
+    "name": "Students",
+    "description": "",
+    "created_at": "09/08/2016 17:28:57.295018",
+    "updated_at": "09/08/2016 17:28:57.295018",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "33",
+    "chapter_id": "18",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "09/08/2016 17:29:07.716332",
+    "updated_at": "09/08/2016 17:29:07.716332",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "34",
+    "chapter_id": "19",
+    "name": "Students",
+    "description": "",
+    "created_at": "03/29/2017 17:03:23.39271",
+    "updated_at": "03/29/2017 17:03:23.39271",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "35",
+    "chapter_id": "19",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "03/29/2017 17:03:41.881653",
+    "updated_at": "03/29/2017 17:03:41.881653",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "36",
+    "chapter_id": "20",
+    "name": "Students",
+    "description": "",
+    "created_at": "06/22/2017 11:14:33.328137",
+    "updated_at": "06/22/2017 11:14:33.328137",
+    "mailing_list_id": ""
+  },
+  {
+    "id": "37",
+    "chapter_id": "20",
+    "name": "Coaches",
+    "description": "",
+    "created_at": "06/22/2017 11:14:47.174062",
+    "updated_at": "06/22/2017 11:14:47.174062",
+    "mailing_list_id": ""
+  }
+]

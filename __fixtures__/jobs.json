@@ -1,0 +1,225 @@
+[
+  {
+    "id": "1",
+    "title": "Apprenticeship",
+    "description":
+      "### What is an apprenticeship?\n\nAn apprenticeship under Codurance is a process of learning. Guided by a dedicated mentor, you will hone the skills that are absolutely essential for a software craftsman.\n\nDifferent people have different abilities. You might be new to software development, or you might already have some experience. As part of your apprenticeship, you'll learn:\n\n  * how to **craft code** that is simple, clean, maintainable and easy to reason about\n  * how to orient your **software design** around goals\n  * **confidence** in your code that comes from applying Extreme Programming practices\n  * software development **methodologies**, including Agile and Lean\n  * **paradigms** and **design patterns** we apply to our code to clarify its intent\n  * the mentality behind **Test-Driven Development** and how we test our code\n  * the full **development lifecycle**, from your first print statement to a full system living in a production environment\n  * **speaking** and **negotiating** skills, to allow you to convey your ideas about how to approach a solution\n  * **tools** and **libraries** that help us become better at our craft\n\nYou won't be doing this alone. Your mentor will take responsibility for helping you grow and pushing your boundaries. What you learn, though, is really up to you: you'll decide what you'd like to focus upon and how you'd like to approach it.\n\n### How long is an apprenticeship, and what happens afterwards?\n\nAn apprenticeship is flexible; we expect it to take somewhere between three and six months, but depending on experience, it can be longer or shorter. The duration doesn't matter to us, as long as you're learning. Once we're happy that you can work with our customers to the standard set by our existing craftsmen, you'll be offered a brand new contract as a craftsman at Codurance.\n\n### What are you looking for in an apprentice?\n\nWe abide by a set of values, and are looking for apprentices who understand why. You don't need to have to have worked professionally. We want people who have:\n\n  * the willingness to learn\n  * an openness to new ideas\n  * passion for technology and code\n  * curiosity when encountering new concepts and tools\n  * a flexible approach\n  * the desire to create things of the highest quality\n\n### I want to apply. What do I need to do?\n\nIf you think Codurance is for you, drop us a line at **[hello@codurance.com](mailto:hello@codurance.com)** and tell us your story. If you're stuck for things to talk about, we have some suggestions:\n\n  * How passionate are you about software?\n  * With which technologies are you comfortable?\n  * Which technologies are you currently learning?\n  * Which technologies would you like to learn?\n  * Do you have any favourite technical books / blogs?\n  * Do you participate in any technical communities?\n  * Are there any pet projects you are working on? Tell us about them. And relax; we promise not to steal your ideas and won't tell anyone.\n\nWe also want links. If you're up for sharing any of the following, send them along. If you don't have them, that's not a problem; we value people, not text.\n\n  * any blog posts or articles you've written\n  * your Twitter account\n  * any open-source projects you've worked on\n  * any pet projects you're particularly proud of\n  * links to any applications you've worked on that are publicly available\n  * anything else that can help us know more about you\n\nThen just sit back and relax. We'll be in touch.",
+    "location": "London",
+    "expiry_date": "07/31/2014 00:00:00",
+    "email": "hello@codurance.com",
+    "link_to_job": "http://codurance.com/careers/apprentice/",
+    "created_by_id": "78",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "05/05/2014 20:46:02.832276",
+    "updated_at": "05/20/2014 15:34:03.480112",
+    "company": "Codurance",
+    "approved_by_id": ""
+  },
+  {
+    "id": "2",
+    "title": "Apprenticeship",
+    "description":
+      "Keepmebooked.com is a small but productive company making life easy for people to let out their property for holidays and short-term lets. With the explosion of holiday rental websites, it’s easier than ever to list a property. However, it’s harder than ever to keep on top of your bookings, enquiries and know how to increase your bookings. Solving this problem is an interesting technical challenge that we have been tackling for our users for the last year.\r\n\r\nWe are looking for an apprentice to join the team, learn our stack and the technologies we use and build some tools to help us solve the problem more effectively.\r\n\r\n### We’re looking for someone… \r\n- who is passionate about coding and has either self-taught themselves or recently graduated from an introductory course\r\n- who would like to move into coding full time and is looking for their first professional experience\r\n- who has committed code to Github (or similar) and has deployed an application to a server\r\n\r\n### Skills you will need\r\n1. Some experience building web applications using Javascript\r\n2. HTML and CSS knowledge\r\n3. The ability to learn new skills in a variety of ways - pairing, self-study, analysing code etc.\r\n\r\n### Benefits you will get\r\n-  4 month apprenticeship position\r\n- London living allowance\r\n- Time to study and learn new technologies and languages\r\n- The opportunity to learn from experienced engineers in a startup environment\r\n- Use of a laptop\r\n\r\nTo apply, send a short (~ 100 words) introduction to yourself to jsjob@keepmebooked.com.",
+    "location": "London",
+    "expiry_date": "08/18/2014 00:00:00",
+    "email": "jsjob@keepmebooked.com",
+    "link_to_job": "https://app.simplenote.com/publish/hml8Wc",
+    "created_by_id": "176",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "06/04/2014 22:41:07.314811",
+    "updated_at": "06/04/2014 22:41:57.049732",
+    "company": "Keepmebooked.com",
+    "approved_by_id": ""
+  },
+  {
+    "id": "3",
+    "title": "Junior JavaScript Developer",
+    "description":
+      "We're looking for a bright and motivated developer to build applications in server-side JavaScript.\r\n\r\nYou'll help build [PhD Manager](http://www.phd-manager.co.uk), a product for Universities to support PhD students, along with customised information systems for our other clients in a wide variety of sectors.\r\n\r\nThis is a great opportunity to refine your development skills in a supportive team focused on excellent software engineering. You'll be actively involved in every aspect of the software development process, and write software used by people who really love the work you do.\r\n\r\n * Based in **Brockley, London (SE4) UK** (a minute's walk from Brockley station)\r\n * Salary around **25k** (graduate) to **30k** (junior)\r\n * Full-time position\r\n\r\nYou'll be working on top of an in-house application framework, designed for building applications which manage large amounts of semi-structured data. Our new team member will:\r\n\r\n * Use client and server-side JavaScript to build high quality and easy-to-use applications with a polished UI, using the ONEIS Platform toolkit.\r\n * Work closely with user facing specialists to produce polished products.\r\n * Extract reusable components to extend the toolkit.\r\n\r\nYou'll be working in a spacious, light-filled office in a new business development in Brockley. We believe in good coffee, sensible working hours, and valuing the contribution of every member of the team.\r\n\r\nWe're funded entirely by revenue from our clients. With no investors, we can focus solely on producing a great product for our happy clients.\r\n\r\nYou'll just need:\r\n\r\n * Proven ability with JavaScript, HTML and CSS (visual design skills not required).\r\n * A good degree in any subject.\r\n * Excellent communication skills, including written English.\r\n\r\nAs well as JavaScript, we also use Ruby and Java. While experience with these would be a bonus, it certainly isn't required.\r\n\r\nWe offer:\r\n\r\n * Competitive salary.\r\n * Training and development budget.\r\n * Top-end computer and a large monitor.\r\n * Support for your professional development.\r\n\r\nONEIS is an equal opportunities employer. We welcome applications from developers from all backgrounds, and any level of experience.\r\n\r\nTo apply, or if you have any questions, please email jobs@oneis.co.uk",
+    "location": "Bromley, London",
+    "expiry_date": "07/31/2014 00:00:00",
+    "email": "jobs@oneis.co.uk",
+    "link_to_job": "http://www.oneis.co.uk/jobs",
+    "created_by_id": "176",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "06/05/2014 10:56:31.404093",
+    "updated_at": "06/05/2014 13:26:10.999943",
+    "company": "ONEIS",
+    "approved_by_id": ""
+  },
+  {
+    "id": "4",
+    "title": "Fellowship Programme, Digital Development",
+    "description":
+      "We are an international digital media organisation and digital development is responsible for numerous products and projects in support of a journalistic mission. These include the creation and publication of all the content on theguardian.com and native apps for Android and iOS. Across all our platforms the Guardian accumulates more than 100 million unique browser visits each month. We create bespoke tools for journalists and a publishing pipeline that allows us to push content to all our channels in seconds. We use a variety of technologies including Scala, Javascript, Elasticsearch and Amazon Web Services, you can find out more at developers.theguardian.com.\r\n\r\nWe are looking talented individuals join our Fellowship Programme and grow their skills with us. This is an excellent opportunity to work on a range of digital products at the Guardian.\r\n\r\nYou will join our development team who create, develop, manage, and maintain the Guardian’s digital products. We work with editorial and commercial teams as well as external partners. You will develop, manage and maintain live applications along with the rest of the development team. You will be pairing with other members of the team to allow you to contribute immediately and learn from their experience. You will also be assigned a mentor to make sure that you are supported in your learning and development.",
+    "location": "London",
+    "expiry_date": "01/29/2016 00:00:00",
+    "email": "",
+    "link_to_job":
+      "https://gnm.taleo.net/careersection/ex/jobdetail.ftl?job=KIN0000LV",
+    "created_by_id": "176",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "01/25/2016 12:52:32.881885",
+    "updated_at": "01/25/2016 12:56:43.51797",
+    "company": "The Guardian",
+    "approved_by_id": "302"
+  },
+  {
+    "id": "9",
+    "title": "Ruby developer",
+    "description":
+      "FutureLearn offers free online courses from universities to millions of people around the world. We're looking for developers of a range of experience levels to help us build our Ruby platform. If you've got more than 3 month's experience with any programming language, either from a professional position, study or personal development, we want to hear from you!\r\n\r\nIf you're keen to work in a considerate, communicative team that cares about doing things in a sustainable way - whether it's anonymising applications so we can make sure we're treating people fairly, making sure people have a good work/life balance, or giving people time to improve their own skills and support each other - have a look through our job ad and get in touch!",
+    "location": "London (not remote)",
+    "expiry_date": "01/27/2017 00:00:00",
+    "email": "jobs@futurelearn.com",
+    "link_to_job": "https://futurelearn-ltd.workable.com/jobs/406671",
+    "created_by_id": "3477",
+    "approved": "f",
+    "submitted": "t",
+    "created_at": "01/23/2017 11:23:43.674255",
+    "updated_at": "01/23/2017 11:23:52.752052",
+    "company": "FutureLearn",
+    "approved_by_id": ""
+  },
+  {
+    "id": "5",
+    "title": "Junior Software Engineer",
+    "description":
+      "The business:\r\n\r\nShutl is the London startup that’s revolutionising commerce by offering delivery in minutes or a time of the customer’s choice. In November 2013 we were acquired by eBay to help build out their worldwide delivery offering and to make Shutl a global brand.\r\n\r\nWe are a fast growing, fast paced organisation that is constantly changing and innovating. Today we are building out our services to become a global eCommerce delivery solution. Shutl has large ambitions and the backing of one of the most prestigious technology companies in the world today.\r\n\r\nWith more than 100 million active users globally eBay is the world's largest online marketplace, where anyone can buy and sell virtually anything. Founded in 1995, eBay connects a diverse and passionate community of individual buyers and sellers, as well as small businesses. In 2012, the total value of goods sold on eBay was $75 billion -- more than $2,300 every second!\r\n\r\nWhat you bring:\r\n\r\nMotivation - you are a self starter with genuine interest to the work and courage to engage on challenging and fun projects with us.\r\n\r\nDesire to learn - you are ready to make learning a day to day reality and we have for you a complex platform and plenty of chances to experiment with new technologies.\r\n\r\nPolyglot attitude - we are a Ruby workshop but our microservice stack uses a wide range of technologies, you should be interested in working on a range of languages and be able to adapt to new ones\r\n\r\nWhat we bring:\r\n\r\nRewarding technical challenges - fixing ecommerce delivery requires solving difficult technical and mathematical problems. This isn’t another photo sharing app - we’re trying to make something that’s brand, spanking new to the world!\r\n\r\nWonderful, bright, air-conditioned offices in Shoreditch, with bike racks (and shower!), right next to Liverpool St and Shoreditch High Street stations for super easy commuting, and lots of great food options nearby.\r\n\r\nGreat company culture - we have a culture of respect and high expectations of others. We love sharing a drink in our Friday All Hands, enjoy free lunch and a pub quiz (not in the pub!) on our demo day and have constant collaboration around the business and loads of opportunity to get involved in interesting stuff.\r\n\r\nFlexible working - no set working hours, really great support for working from home (we’ve got good video conferencing facilities) and generous holiday.\r\n\r\nCompetitive salary and generous benefits.\r\n\r\nWhat you'll be doing/learning:\r\n\r\nTDD/BDD on a microservice stack deploying every day.\r\nRefactoring to constantly improve code quality\r\nBuilding APIs\r\nPairing with team members to share knowledge and get constant peer review\r\nWorking across our entire stack and infrastructure\r\nUsing SQL and NoSQL technologies like MongoDB, Redis, Memcache and Neo4j\r\nTuning and supporting the application with tools like JMeter, JMX and Visual VM.\r\nIt is a benefit if you have:\r\nSome experience in HTML and CSS\r\nSome familiarity of Ruby or JavaScript (or Java, Python, Clojure)\r\nUsed Git for version control\r\nHeard about Agile software development and Continuous Delivery\r\n\r\nShutl is an equal opportunity employer and we value diversity. We do not discriminate on the basis of race, religion, colour, national origin, gender, sexual orientation, age, marital status or disability status.\r\n",
+    "location": "London",
+    "expiry_date": "03/04/2016 00:00:00",
+    "email": "",
+    "link_to_job": "https://shutl.com/uk/jobs",
+    "created_by_id": "1427",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "02/15/2016 14:48:24.915874",
+    "updated_at": "02/17/2016 11:02:24.591532",
+    "company": "Shutl",
+    "approved_by_id": "176"
+  },
+  {
+    "id": "10",
+    "title": "Ruby or Javascript Developer",
+    "description":
+      "I'm Mal, and I work for the Chartered College of Teaching. We're a new organisation that aims to improve the quality of education for children by supporting teachers and encouraging great teaching. We're looking for a developer to join our team and help build our main offering: a platform where teachers can learn from and connect with one another.\r\n\r\nThe application is still very early-days, so there's flexibility to work with Ruby and Rails on the back-end, Javascript, HTML & SCSS on the front-end, or across the stack. Our office is based in London near Euston station, and we're open to remote working. This would be an excellent position for someone looking for their second tech role, where they can make a big impact in a small team.\r\n\r\nYou can see more details & apply for the role at https://chartered-college-of-teaching.workable.com/jobs/475485. If you've any questions, please email me at mpinder@chartered.college, and I'll be happy to answer!",
+    "location": "London or Remote",
+    "expiry_date": "05/10/2017 00:00:00",
+    "email": "mpinder@chartered.college",
+    "link_to_job":
+      "https://chartered-college-of-teaching.workable.com/jobs/475485",
+    "created_by_id": "5894",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "04/27/2017 10:59:33.639773",
+    "updated_at": "04/28/2017 10:10:42.705829",
+    "company": "Chartered College of Teaching",
+    "approved_by_id": "302"
+  },
+  {
+    "id": "7",
+    "title": "Junior-Mid Level Ruby Developers",
+    "description":
+      "FutureLearn is a social learning platform, backed by the Open University and based in the British Library. We offer free online courses run by many leading universities from around the globe.\r\n\r\nSince our launch three years ago, we’ve run hundreds of courses that have attracted over three million learners to our platform. They come to study a diverse range of topics and categories from the archeology of ancient Rome to psychology and modern medicine. We have a growing following from around the world, with people of all genders and age groups well-represented. We help them learn by provoking conversation around the course material, so that learners and educators learn as much from each other as from the material itself.\r\n\r\nWe try to mirror this environment within our company. We work together to help people improve their skills, and we take time to reflect on the way we work and on our product to help us learn and improve on both. It is a collaborative environment where designers, developers and product managers work in small multidisciplinary teams and all contribute to the product’s direction.\r\n\r\nFutureLearn’s vision is to pioneer the best learning experiences for everyone, anywhere. We’d like our team makeup to reflect our mission and so we are particularly keen to hear from applicants from underrepresented groups.\r\n\r\n#### In this role you'll be:\r\n\r\nWorking in a small agile team with other developers, designers and product managers\r\nDeveloping with the Ruby on Rails web framework\r\nUsing unit tests to drive design and keep everything working\r\nWorking in a continuous deployment environment\r\nWriting robust, well-factored CSS and JavaScript\r\nAny previous experience in any of these areas would be a bonus, but there’s plenty of scope to learn these skills as you work.\r\n\r\nAbove all, we are looking for people who are curious, think critically, are eager to learn and keen to use their experience to help and support others. You will need to be able to communicate and explain things clearly and work well in a collaborative environment.\r\n\r\n#### How we learn\r\n\r\nLearning and collaborating is a huge part of working at FutureLearn, and we’re always trying to improve how we do this. So far we’re using a combination of pairing sessions, mentoring & coaching, internal lightning talks & hackdays, sharing & discussing talks we love from conferences, learning hours, and other experiments but we’re always open to new ways!\r\n\r\nDuring at least your first three months at FutureLearn, you will be mentored by an experienced colleague. Your mentor will:\r\n\r\n- help you plan your personal development and settle into the role\r\n- pair with you to help you learn what you need to do the job\r\n- encourage you to work with other team members\r\n- show you where to get any other support you might need\r\n\r\n## Requirements\r\n\r\nWe’re looking for junior/mid-level Ruby developers with at least 3 months programming experience either from a professional position, study or personal development.\r\n\r\nWe are happy to consider applicants whose experience is in programming languages other than Ruby.\r\n\r\n## Benefits\r\n\r\n- Salary: £28,000 - 45,000, depending on experience\r\n- 28 days holiday per year\r\n- Flexible working hours and environment\r\n- Childcare tax vouchers, parental leave, season ticket loans, Bike To Work scheme\r\n- Pension (4% employer / employee contribution)\r\n- Attend conferences and training relevant to your development\r\n- Buy any tech books, screencasts and magazines that you need\r\n- Subsidised Peyton & Byrne canteen for breakfast and lunch at the British Library",
+    "location": "London",
+    "expiry_date": "04/17/2016 00:00:00",
+    "email": "",
+    "link_to_job": "https://futurelearn-ltd.workable.com/jobs/220202",
+    "created_by_id": "176",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "03/17/2016 13:53:57.29217",
+    "updated_at": "03/17/2016 13:57:14.204074",
+    "company": "FutureLearn",
+    "approved_by_id": "176"
+  },
+  {
+    "id": "8",
+    "title": "Junior Front End Developer",
+    "description":
+      "**Description**\r\n\r\nFutureLearn is a social learning platform, backed by the Open University and based in the British Library. We offer free online courses run by many leading universities partners from around the globe.\r\n\r\nSince our launch three years ago, we’ve run hundreds of courses that have attracted about three million learners to our platform. They come to study a diverse range of topics and categories from the archeology of ancient Rome to psychology and modern medicine. We have a growing following from around the world, with people of all genders and age groups well-represented. We help them learn by provoking conversation around the course material, so that learners and educators learn as much from each other as from the material itself.\r\n\r\nWe try to mirror this environment within our company. We work together to help people improve their skills, and we reflect on our work processes improve the product and the way we work. It is a collaborative environment where designers, developers and product managers work in small multidisciplinary teams and all contribute to the product’s direction.\r\n\r\nWe’re looking for a junior front-end developer to join our team. We’re looking for somebody who is enthusiastic and eager to learn.\r\n\r\nOur front-end developers work closely with our design team to develop the modular design system that we use to build the site. You can read more about this in a recently published article: [The Language of Modular Design](http://alistapart.com/article/language-of-modular-design). As well as delivering new features for our users and improving existing functionality, we make time to refactor our codebase to make it more pleasant and productive to work with, and to better align with how the design team thinks about the product. We design & build for mobile devices first, and have a strong focus on building an accessible product.\r\n\r\nFutureLearn’s vision is to pioneer the best learning experiences for everyone, anywhere. We’d like our team makeup to reflect our mission and so we are particularly keen to hear from applicants from underrepresented groups.\r\n\r\nIn this role you'll be learning how to:\r\n\r\n* Work in a small agile team with other developers, designers and product managers\r\n* Help others to improve and to learn from you\r\n* Present your work to your team, other product teams, stakeholders and the wider company\r\n* Write semantic, modular, accessible, responsive code (and refactor older code to improve it and ensure it meets these requirements).\r\n* You’ll be learning Haml, Sass, JavaScript and some Ruby within the Ruby on Rails framework.\r\n\r\nAny previous experience in any of these areas would be a bonus, but there’s plenty of scope to learn these skills as you work.\r\n\r\n\r\n**About how we learn**\r\n[Learning and collaborating](https://about.futurelearn.com/blog/imposter-syndrome-how-we-act-and-work-together/) is a huge part of working at FutureLearn, and we’re always trying to improve how we do this. So far we’re using a combination of pairing sessions, mentoring & coaching, internal lightning talks & hackdays, sharing & discussing Talks We Love from conferences we’ve been to, [learning hours](https://about.futurelearn.com/blog/making-futurelearn/running-a-learning-hour/), and [other experiments](https://about.futurelearn.com/blog/job-swap-at-futurelearn/) but we’re always open to new ways!\r\n\r\nDuring at least your first three months at FutureLearn, you will be mentored by an experienced colleague. Your mentor will:\r\n\r\n* help you plan your personal development\r\n* pair with you to help you learn what you need to do the job\r\n* encourage you to work with other team members\r\n* show you where to get any other support you might need\r\n\r\n**Requirements**\r\n\r\nYou will be familiar with the basics of web development: HTML, CSS and JavaScript, and want to learn more.\r\n\r\nAs part of this team, you will learn how to build a robust user interface using modern development tools and techniques, while proactively helping to improve FutureLearn’s front end experience.\r\n\r\nBut above all, we are looking for people who are curious, think critically, can demonstrate an ability to learn, and are keen to use their experience to help and support others. You will need to be able to communicate and explain things clearly and work well in a collaborative environment.\r\n\r\n**Benefits**\r\n\r\n* Salary : £25,000 - 35,000, depending on experience\r\n* 28 days holiday per year\r\n* Flexible working hours and environment\r\n* Childcare tax vouchers, parental leave, season ticket loans, Bike To Work scheme\r\n* Pension (4% employer / employee contribution)\r\n* Attend conferences and training relevant to your development\r\n* Buy any tech books, screencasts and magazines that you need\r\n* Subsidised Peyton & Byrne canteen for breakfast and lunch at the British Library\r\n\r\n\r\n**Further information**\r\nYou can read our blog to find out more about [how we we make FutureLearn](https://about.futurelearn.com/blog/?category=making-futurelearn) and if you have any queries about this role do not hesitate to contact us at [tech.jobs@futurelearn.com](mailto:tech.jobs@futurelearn.com).\r\n\r\n**How to apply**\r\nPlease send an email directly to [tech.jobs@futurelearn.com](mailto:tech.jobs@futurelearn.com), including your CV and a covering letter telling us why you'd like to come work with us. \r\n\r\n**Please note**: This is not a remote working position and you must have the right to work in the UK to apply. No recruitment agents please.",
+    "location": "London",
+    "expiry_date": "03/31/2016 00:00:00",
+    "email": "tech.jobs@futurelearn.com",
+    "link_to_job": "https://futurelearn-ltd.workable.com/jobs/217943",
+    "created_by_id": "3477",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "03/17/2016 14:05:47.796166",
+    "updated_at": "03/17/2016 14:20:51.003399",
+    "company": "FutureLearn",
+    "approved_by_id": "176"
+  },
+  {
+    "id": "11",
+    "title": "Junior Developer",
+    "description":
+      "We’re looking for bright and motivated developers to join our development team for Haplo Research Manager, our open source product for managing research at Universities.\r\n\r\nThis is a great opportunity to refine your development skills in a supportive team focused on excellent software engineering. You’ll be actively involved in every aspect of the software development process, and write software used by people who really love the work you do.\r\n\r\nYou’ll be working on top of our [open source in-house application framework](https://haplo.org), designed for building applications which manage large amounts of semi-structured data. You won’t be alone however. As our new team member, you will:\r\n\r\n* Use client and server-side JavaScript to build high quality and easy-to-use applications with a polished UI, using the Haplo Platform toolkit.\r\n* Work closely with user facing specialists to produce polished products.\r\n* Extract reusable components to extend the toolkit.\r\n* You’ll be working in a spacious, light-filled office in a new business development in Brockley.\r\n\r\nYou’ll just need:\r\n\r\n * Familiarity with web apps, HTML and CSS (visual design skills not required).\r\n * A good degree in any subject (our clients are universities, so our team need to understand what they’re like).\r\n * Excellent communication skills, including written English.\r\n\r\nYou don’t need any experience of the technologies we use. We’re really good at [teaching early stage developers everything they need to know](https://www.haplo-services.com/blog/2017/working-with-early-stage-developers).\r\n\r\n[Full job advert](https://www.haplo-services.com/jobs/junior-developer)",
+    "location": "London",
+    "expiry_date": "12/31/2017 00:00:00",
+    "email": "jobs@haplo-services.com",
+    "link_to_job": "https://www.haplo-services.com/jobs/junior-developer",
+    "created_by_id": "5348",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "08/07/2017 15:38:22.442256",
+    "updated_at": "08/07/2017 15:45:33.128513",
+    "company": "Haplo",
+    "approved_by_id": "302"
+  },
+  {
+    "id": "12",
+    "title": "Junior Developer ",
+    "description":
+      "Overview\r\n\r\nWe have a number of new and exciting projects in the pipeline and need some smart developers who can come and help us with the upcoming technical challenges.\r\n\r\nAs a team, our mission is to create a technology driven company that enables our employees to use their skills to solve interesting problems and scale the product as the company grows.\r\n\r\nTo achieve this, we are looking to hire Junior Developers that are passionate about developing simple solutions for complex problems. Successful candidates will work for as a Full stack Ruby Developer as part of one of the best small companies to work for in the UK.\r\n\r\nWe believe that diversity of experience whether that be personal or professional, contributes to a broader collective perspective and will consistently lead to a better company with more innovative solutions and products. We are working hard to increase the diversity of our team and be more inclusive wherever we can in order for people to consider becoming a part of it.\r\n\r\nWhy should you join carwow?\r\n\r\n*You will be pair programming from day 1 and learn from an extremely experienced team of developers from different backgrounds\r\n*We work quickly and you’ll be able to have a direct impact on the product — pushing code to production within your first day\r\n*You will be working with a company who are passionate about quality — TDD means a lot to us. Whilst delivery is important, we don’t sacrifice on quality\r\n*We promote continuous learning and don’t pigeonhole our developers to just knowing Ruby, you will be able to attend conferences for techs such as Elm Europe, dotCSS / JS, Full Stack Fest and Strangeloop\r\n*You can get involved with a number of conferences that we sponsor/ run/ host such as Brighton Ruby Conference, Ruby Hacknight, Codebar and London Elixir Dojo\r\n*You will be working with a smart, quality driven and collaborative team\r\n*Tech is extremely important to us, one of our founders is the CTO who is very passionate about software engineering. He’ll always have the teams back\r\n*You are exposed to the entire product development process, allowing you to develop skills outside of software development\r\n*We have challenging scalability and are growing everyday. Currently there are around 3 million visitors a month on average to the website - having grown from 2 million in the last 6 months!\r\n*There’s lots to do; we are building tonnes of new features all the time and still defining what carwow is as a product\r\n*Every Friday, the engineering team is given the freedom to take a break from the backlog and work on something of interest that contributes to the technical maturity and stability of our codebase.\r\n\r\nYou should apply if:\r\n\r\n*You can demonstrate a good understanding of web technologies\r\n*You understand why testing software is useful, and try to write well-tested code as much as possible\r\n*You enjoy challenges across the entire stack\r\n*You have academic, personal or professional experience, with a dynamic web-based programming language (e.g. Ruby, Python, or PHP)\r\n*You care about software excellence\r\n*You are pragmatic in your approach to writing software (e.g. you take context into consideration, and don’t follow rules blindly)\r\n*You want to learn about software best practices such as refactoring, clean code, domain driven design, etc\r\n\r\nOur setup?\r\n\r\nOur product teams are cross functional and typically consist of full stack developers, designers, PMs, and insight analysts\r\nThe teams are focussed around reaching core objectives for the year. Some of our objectives for this year include: launching a leasing proposition, increasing sales of in-stock cars, increasing dealership groups engagement.\r\n\r\nWe love Ruby, JavaScript, Git, TDD, and OSS and use a bunch of other technologies daily; Haml, Sass, Heroku, AWS being the most usual suspects\r\n\r\nAbout carwow\r\n\r\ncarwow is the most convenient, stress-free way to find and buy a new car, at a price you can be confident in. carwow aims to solve the major pain points that buyers and dealers experience in the buying process, putting them in a more powerful position than ever before. Offering buyers crucial price confidence, a more convenient hassle free way to find and buy the car they want, and an altogether better buying experience. And it's great news for dealers too. Through carwow, our dealer partners sell more cars than they could in the showroom alone, while reducing cost inefficiencies and increasing stock turnover. This means they can pass on great prices to carwow buyers.\r\n\r\nWe’re a driven, energetic startup with a team of 140+ based in central London and Munich. We are backed by Europe’s leading VCs including:\r\n\r\n- Balderton Capital (Betfair, LOVEFiLM, Citymapper, MySQL)\r\n\r\n- Accel (Facebook, Spotify, Dropbox, Groupon)\r\n\r\n- Vitruvian Partners (JustEat, Skyscanner, Trustpilot)\r\n\r\n- Episode 1 (Zoopla, Shazam, LOVEFiLM)\r\n\r\n- Samos (Ocado, Betfair, PKR)\r\n\r\nWe’ve raised over £48m in funding since we launched, so we’re growing fast. We’re relentlessly driven and constantly asking ourselves how we can make carwow better.",
+    "location": "London",
+    "expiry_date": "12/31/2017 00:00:00",
+    "email": "jason.wong@carwow.co.uk",
+    "link_to_job": "https://carwow.workable.com/jobs/422001",
+    "created_by_id": "6705",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "08/08/2017 10:47:25.971805",
+    "updated_at": "08/08/2017 13:57:57.947876",
+    "company": "carwow",
+    "approved_by_id": "302"
+  },
+  {
+    "id": "13",
+    "title": "Software Engineer",
+    "description":
+      "We are seeking a highly motivated software engineer who is interested in working in a fast growth start-up which is developing disruptive technology for personalised learning in the life sciences and healthcare.\r\n\r\nClojure/Clojurescript\r\nReagent/Re-frame\r\nLeiningen, Git, Linux",
+    "location": "Cambridge",
+    "expiry_date": "10/31/2017 00:00:00",
+    "email": "info@cambioscience.com",
+    "link_to_job": "https://www.cambioscience.com/careers/",
+    "created_by_id": "6578",
+    "approved": "f",
+    "submitted": "t",
+    "created_at": "08/17/2017 10:15:46.432527",
+    "updated_at": "08/17/2017 10:16:06.323793",
+    "company": "CamBioScience",
+    "approved_by_id": ""
+  },
+  {
+    "id": "14",
+    "title": "Junior Front End Developer",
+    "description":
+      "# Junior Front End Developer\r\n\r\n#### At IF, we make digital services that empower people.\r\n\r\nWe're an agile team of designers and developers, based in the beautiful Somerset House, London. We work on hard problems around accountability, digital rights, machine learning and privacy. Every project involves \"thinking by making\" – building prototypes to understand problems and approaches. We work as a design consultancy, collaborating with clients to build better products. Join us.\r\n\r\n### The role\r\n\r\nWe’re looking for a Junior Front End Developer to develop and maintain IF’s existing and future front-end prototypes and services. You’ll help us make them easy to use, understandable, robust and functional prototypes and websites.\r\n\r\nYou’ll be joining a brilliant team at an early stage, which means that every line of code you write will have impact. We are looking for a talented person looking to build their career with a company where they can make a difference.\r\n\r\n### Things you'll do as part of the role\r\n\r\n1. Assist with the design and implementation of our prototypes and front facing websites\r\n2. Write clean HTML, CSS and JavaScript that’s easy to maintain\r\n3. Work as part of an agile team, pairing with other developers and designers\r\n4. Share knowledge within the team\r\n5. Participate in peer code reviews\r\n6. As a small team there are also a set of responsibilities that we all share, including writing and talking about our work, planning and carrying out meetings\r\n\r\n### Experience you'll bring to this role\r\n\r\n1. No commercial experience is required, but we would like to see applications you’ve developed using HTML and CSS / Sass and JavaScript\r\n2. An understanding of version control, particularly Git and GitHub\r\n3. Experimentation in code, and an enjoyment in solving interesting technology problems\r\n4. Keen interest in privacy and security\r\n\r\n### Details\r\n\r\n1. Salary up to £28,000/year depending on experience\r\n2. This is a permanent role\r\n3. 28 days of holiday, and additional time off in August and December\r\n4. London based (zone 1), full time\r\n5. We will support you to learn on the job and gain new skills\r\n6. We are hoping for someone to join us from October 2017\r\n7. You will have the right to live and work in the UK - unfortunately we are unable support Visa applications\r\n7. We encourage applications from people of all backgrounds, and we particularly welcome applications from candidates from black, asian, minority ethnic groups as they are underrepresented in our team.\r\n\r\nPlease email your CV and a short description of how you meet the job requirements to hello@projectsbyif.com, with the subject line “Front end developer job application\".\r\n\r\nApplications for this job are welcome until we've found the right person.",
+    "location": "Somerset House, London",
+    "expiry_date": "12/01/2017 00:00:00",
+    "email": "hello@projectsbyif.com",
+    "link_to_job": "https://jobs.projectsbyif.com/junior-front-end-developer",
+    "created_by_id": "6806",
+    "approved": "t",
+    "submitted": "t",
+    "created_at": "08/19/2017 18:10:54.052851",
+    "updated_at": "08/20/2017 20:46:16.38762",
+    "company": "IF",
+    "approved_by_id": "302"
+  }
+]

@@ -1,0 +1,184 @@
+type Address implements Node {
+  id: ID! @isUnique
+  flat: String
+  street: String!
+  city: String!
+  postalCode: String!
+  sponsor: Sponsor! @relation(name: "SponsorAddress")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Sponsor implements Node {
+  id: ID! @isUnique
+  name: String!
+  description: String
+  avatar: String
+  website: String
+  email: String!
+  address: Address! @relation(name: "SponsorAddress")
+  seats: Int!
+  jobs: [Job!] @relation(name: "SponsorJobs")
+  workshops: [Workshop!] @relation(name: "WorkshopSponsor")
+  chapter: Chapter! @relation(name: "ChapterSponsor")
+  numberOfCoaches: Int!
+  imageCache: String
+  contactFirstname: String!
+  contactSurname: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Chapter implements Node {
+  id: ID! @isUnique
+  name: String!
+  city: String!
+  email: String!
+  twitter: String
+  slug: String!
+  active: Boolean!
+  workshops: [Workshop!]! @relation(name: "ChapterWorkshops")
+  members: [Member!]! @relation(name: "ChapterMembers")
+  sponsors: [Sponsor!]! @relation(name: "ChapterSponsor")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Workshop implements Node {
+  id: ID! @isUnique
+  chapter: Chapter @relation(name: "ChapterWorkshops")
+  attendees: [Member!]! @relation(name: "WorkshopMembers")
+  sponsor: Sponsor! @relation(name: "WorkshopSponsor")
+  invitable: Boolean!
+  time: DateTime!
+  dateAndTime: DateTime!
+  rsvpCloseTime: DateTime!
+  rsvpOpenTime: DateTime!
+  rsvpOpenDate: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Member implements Node {
+  id: ID! @isUnique
+  firstname: String!
+  surname: String!
+  email: String!
+  mobile: String
+  twitter: String!
+  bio: String!
+  pronouns: String
+  role: Role! @relation(name: "MemberRole")
+  subscriptions: [Chapter!]! @relation(name: "ChapterMembers")
+  workshopsAttended: [Workshop!]! @relation(name: "WorkshopMembers")
+  jobApprovals: [Job] @relation(name: "JobApprovals")
+  jobPostings: [Job] @relation(name: "JobPostings")
+  bans: [Ban] @relation(name: "MemberBans")
+  receivedCoachWelcomeEmail: Boolean!
+  receivedStudentWelcomeEmail: Boolean!
+  canLogIn: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Role {
+  id: ID! @isUnique
+  name: String!
+  members: [Member!]! @relation(name: "MemberRole")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Job implements Node {
+  id: ID! @isUnique
+  approvedBy: Member @relation(name: "JobApprovals")
+  createdBy: Member @relation(name: "JobPostings")
+  title: String!
+  description: String!
+  location: String!
+  email: String!
+  linkToJob: String!
+  approved: Boolean!
+  submitted: Boolean!
+  company: Sponsor! @relation(name: "SponsorJobs")
+  expiryDate: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Ban implements Node {
+  id: ID! @isUnique
+  member: Member! @relation(name: "MemberBans")
+  addedById: Int!
+  reason: String!
+  note: String
+  explanation: String!
+  permanent: Boolean!
+  expiresAt: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+#-------------------------------------------------------------------------------
+
+type AuthService implements Node {
+  id: ID! @isUnique
+  memberId: Int!
+  provider: String!
+  uid: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Event implements Node {
+  id: ID! @isUnique
+  venueId: Int!
+  name: String!
+  description: String!
+  slug: String!
+  schedule: String!
+  coachSpaces: Int!
+  studentSpaces: Int!
+  coachQuestionnaire: String!
+  studentQuestionnaire: String!
+  coachDescription: String!
+  info: String!
+  announceOnly: Boolean!
+  url: String!
+  email: String!
+  invitable: Boolean!
+  titoUrl: String!
+  showFaq: String!
+  audience: String!
+  displayStudents: Boolean!
+  displayCoaches: Boolean!
+  externalUrl: String!
+  confirmationRequired: Boolean!
+  surveysRequired: Boolean!
+  dateAndTime: DateTime!
+  endsAt: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Feedback implements Node {
+  id: ID! @isUnique
+  coachId: Int!
+  tutorialId: Int!
+  workshopId: Int!
+  request: String!
+  suggestions: String!
+  rating: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Group implements Node {
+  id: ID! @isUnique
+  chapterId: Int!
+  name: String!
+  description: String!
+  mailingListId: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

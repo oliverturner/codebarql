@@ -1,0 +1,349 @@
+[
+  {
+    "id": 4,
+    "member_id": 9,
+    "expires_at": "2015-09-12T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Missed more than 3 workshops.",
+    "added_by_id": 1301,
+    "created_at": "2015-08-13T00:40:25.897394",
+    "updated_at": "2015-08-13T00:40:25.897394",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 5,
+    "member_id": 514,
+    "expires_at": "2015-09-12T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Missed more than 3 workshops.",
+    "added_by_id": 1301,
+    "created_at": "2015-08-13T00:40:55.922615",
+    "updated_at": "2015-08-13T00:40:55.922615",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 7,
+    "member_id": 1558,
+    "expires_at": "2015-09-08T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Coach did not attend 3 times in a row.",
+    "added_by_id": 1085,
+    "created_at": "2015-09-07T19:18:21.192425",
+    "updated_at": "2015-09-07T19:18:21.192425",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 8,
+    "member_id": 17,
+    "expires_at": "2015-10-22T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Never shows up :(",
+    "added_by_id": 1301,
+    "created_at": "2015-10-14T20:29:54.771331",
+    "updated_at": "2015-10-14T20:29:54.771331",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 10,
+    "member_id": 525,
+    "expires_at": "2020-12-31T00:00:00",
+    "reason": "Violated code of conduct",
+    "note":
+      "Has made threats to organisers, banning indefinitely for safety of other participants...",
+    "added_by_id": 1301,
+    "created_at": "2015-11-02T12:16:24.375591",
+    "updated_at": "2015-11-02T12:16:24.375591",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 14,
+    "member_id": 2017,
+    "expires_at": "2016-04-13T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Was absent many times with no notice or extremely short notice",
+    "added_by_id": 1301,
+    "created_at": "2016-03-09T18:39:05.895079",
+    "updated_at": "2016-03-09T18:39:05.895079",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 15,
+    "member_id": 2795,
+    "expires_at": "2016-04-15T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "No show on 15 Mar 2016, 27 Jan 2016 and 06 Jan 2016\tJS.",
+    "added_by_id": 176,
+    "created_at": "2016-03-15T22:31:58.442049",
+    "updated_at": "2016-03-15T22:31:58.442049",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 16,
+    "member_id": 1378,
+    "expires_at": "2016-04-15T00:00:00",
+    "reason": "Violated attendance policy",
+    "note":
+      "Did not attend 6 workshops since the beginning of 2016.\r\n13th of Jan, 27th of Jan, 3rd of Feb, 24th of Feb, 2nd of March, 15th of March",
+    "added_by_id": 176,
+    "created_at": "2016-03-15T22:38:50.226218",
+    "updated_at": "2016-03-15T22:38:50.226218",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 17,
+    "member_id": 3097,
+    "expires_at": "2016-04-16T00:00:00",
+    "reason": "Violated attendance policy",
+    "note":
+      "Did not attend three central London workshops (3/2, 2/3 and 16/3). Had been sent attendance warning upfront.",
+    "added_by_id": 176,
+    "created_at": "2016-03-16T21:13:08.677736",
+    "updated_at": "2016-03-16T21:13:08.677736",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 18,
+    "member_id": 3118,
+    "expires_at": "2016-04-16T00:00:00",
+    "reason": "Violated attendance policy",
+    "note":
+      "Did not attend 4 central London workshops in a period of 2 months (9/2, 17/2, 9/3 and 16/3). Had been sent attendance warning upfront.",
+    "added_by_id": 176,
+    "created_at": "2016-03-16T21:15:49.627682",
+    "updated_at": "2016-03-16T21:15:49.627682",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 19,
+    "member_id": 263,
+    "expires_at": "2016-04-24T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Failed to show up to 4 workshops since the beginning of 2016!",
+    "added_by_id": 176,
+    "created_at": "2016-03-24T09:24:57.19313",
+    "updated_at": "2016-03-24T09:24:57.19313",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 21,
+    "member_id": 2798,
+    "expires_at": "2016-04-30T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Violated the attendance policy.",
+    "added_by_id": 838,
+    "created_at": "2016-03-30T20:12:29.226913",
+    "updated_at": "2016-03-30T20:12:29.226913",
+    "permanent": false,
+    "explanation": null
+  },
+  {
+    "id": 20,
+    "member_id": 3386,
+    "expires_at": "2021-12-31T00:00:00",
+    "reason": "Violated code of conduct",
+    "note":
+      "We have reports that he has been making other participants uncomfortable.",
+    "added_by_id": 1301,
+    "created_at": "2016-03-25T13:41:48.953406",
+    "updated_at": "2016-03-30T20:21:23.487203",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 3,
+    "member_id": 1949,
+    "expires_at": "2017-01-31T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Is straight white male.",
+    "added_by_id": 1301,
+    "created_at": "2015-06-23T09:32:17.267992",
+    "updated_at": "2016-03-30T20:23:10.119816",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 13,
+    "member_id": 2467,
+    "expires_at": "2022-05-28T00:00:00",
+    "reason": "Violated code of conduct",
+    "note":
+      "Made misogynistic comments about female participants, brings his personal projects to get debugged rather than to learn. Also highly likely he does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2015-11-19T10:58:06.799891",
+    "updated_at": "2016-03-30T20:23:43.142306",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 12,
+    "member_id": 2895,
+    "expires_at": "2017-08-31T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2015-11-13T12:19:03.696842",
+    "updated_at": "2016-03-30T20:24:18.767999",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 11,
+    "member_id": 2864,
+    "expires_at": "2019-06-29T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Does not meet eligibility criteria",
+    "added_by_id": 1301,
+    "created_at": "2015-11-09T17:59:14.838994",
+    "updated_at": "2016-03-30T20:24:47.29129",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 9,
+    "member_id": 525,
+    "expires_at": "2015-11-18T00:00:00",
+    "reason": "Offensive behavior",
+    "note": "Rude on numerous occasions to organisers",
+    "added_by_id": 838,
+    "created_at": "2015-10-14T20:33:33.285432",
+    "updated_at": "2016-03-30T20:25:02.898563",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 1,
+    "member_id": 2124,
+    "expires_at": "2016-06-30T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note":
+      "Does not meet eligibility, did not respond to repeated requests to verify.",
+    "added_by_id": 1301,
+    "created_at": "2015-06-18T14:10:41.394345",
+    "updated_at": "2016-03-30T20:30:04.486242",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 22,
+    "member_id": 3582,
+    "expires_at": "2016-11-11T00:00:00",
+    "reason": "Violated eligibility criteria",
+    "note": "Does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2016-04-12T17:47:20.371672",
+    "updated_at": "2016-04-12T17:47:20.371672",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 23,
+    "member_id": 2943,
+    "expires_at": "2016-11-11T00:00:00",
+    "reason": "Violated eligibility criteria",
+    "note": "Does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2016-04-12T17:48:40.858941",
+    "updated_at": "2016-04-12T17:48:40.858941",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 24,
+    "member_id": 3556,
+    "expires_at": "2016-11-11T00:00:00",
+    "reason": "Violated eligibility criteria",
+    "note": "Does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2016-04-12T17:49:19.433927",
+    "updated_at": "2016-04-12T17:49:19.433927",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 25,
+    "member_id": 3395,
+    "expires_at": "2016-05-28T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Does not meet eligibility",
+    "added_by_id": 1301,
+    "created_at": "2016-05-24T14:38:56.77357",
+    "updated_at": "2016-05-24T14:38:56.77357",
+    "permanent": true,
+    "explanation": "Sorry, but you do not meet the eligibility criteria."
+  },
+  {
+    "id": 26,
+    "member_id": 796,
+    "expires_at": "2016-06-24T00:00:00",
+    "reason": "Offensive behavior",
+    "note":
+      "Hostile and offensive behaviour in the pub after codebar. Asking if diversity in tech and gender binary issues were such a big deal. Gaslighting a student. Manipulative behaviour. Demeaning students and laughing at them for not knowing things. Demeaning coaches. Being giving second chances and opportunities to grow as a person but burning those bridges.",
+    "added_by_id": 2078,
+    "created_at": "2016-06-23T19:42:33.763415",
+    "updated_at": "2016-06-23T19:42:33.763415",
+    "permanent": true,
+    "explanation": ""
+  },
+  {
+    "id": 27,
+    "member_id": 4068,
+    "expires_at": "2016-07-02T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Does not meet eligibility criteria",
+    "added_by_id": 1301,
+    "created_at": "2016-07-01T17:05:12.141177",
+    "updated_at": "2016-07-01T17:05:12.141177",
+    "permanent": true,
+    "explanation":
+      "Sorry, but you do not meet our eligibility criteria to attend as a student."
+  },
+  {
+    "id": 28,
+    "member_id": 2699,
+    "expires_at": "2016-08-13T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Missed 8 sessions",
+    "added_by_id": 1301,
+    "created_at": "2016-07-13T20:16:17.924499",
+    "updated_at": "2016-07-13T20:16:17.924499",
+    "permanent": false,
+    "explanation":
+      "You have missed 8 sessions as of 13 July. We are suspending your invitations for 1 month. In the future, please remember to cancel your RSVP if you cannot make it to codebar."
+  },
+  {
+    "id": 2,
+    "member_id": null,
+    "expires_at": "2016-06-22T00:00:00",
+    "reason": "Violated attendance eligibility",
+    "note": "Does not meet eligibility criteria.",
+    "added_by_id": 1301,
+    "created_at": "2015-06-22T09:02:54.522785",
+    "updated_at": "2016-03-30T20:25:53.215948",
+    "permanent": true,
+    "explanation": null
+  },
+  {
+    "id": 29,
+    "member_id": 4474,
+    "expires_at": "2017-05-20T00:00:00",
+    "reason": "Violated attendance policy",
+    "note": "Does not meet eligibility criteria, ignored multiple emails.",
+    "added_by_id": 1301,
+    "created_at": "2016-10-05T15:28:59.585395",
+    "updated_at": "2016-10-05T15:28:59.585395",
+    "permanent": true,
+    "explanation":
+      "Based on your non-response to multiple attempts we have made to contact you, we are suspending your invitations because we do not believe that you meet our eligibility criteria."
+  }
+]
