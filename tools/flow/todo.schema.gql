@@ -1,0 +1,61 @@
+type AuthService implements Node {
+  id: ID! @isUnique
+  memberId: Int!
+  provider: String!
+  uid: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Event implements Node {
+  id: ID! @isUnique
+  venueId: Int!
+  name: String!
+  description: String!
+  slug: String!
+  schedule: String!
+  coachSpaces: Int!
+  studentSpaces: Int!
+  coachQuestionnaire: String!
+  studentQuestionnaire: String!
+  coachDescription: String!
+  info: String!
+  announceOnly: Boolean!
+  url: String!
+  email: String!
+  invitable: Boolean!
+  titoUrl: String!
+  showFaq: String!
+  audience: String!
+  displayStudents: Boolean!
+  displayCoaches: Boolean!
+  externalUrl: String!
+  confirmationRequired: Boolean!
+  surveysRequired: Boolean!
+  dateAndTime: DateTime!
+  endsAt: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Feedback implements Node {
+  id: ID! @isUnique
+  coachId: Int!
+  tutorialId: Int!
+  workshopId: Int!
+  request: String!
+  suggestions: String!
+  rating: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Group implements Node {
+  id: ID! @isUnique
+  chapterId: Int!
+  name: String!
+  description: String!
+  mailingListId: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

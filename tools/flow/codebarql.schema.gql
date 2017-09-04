@@ -1,10 +1,28 @@
+﻿type File implements Node {
+  id: ID! @isUnique
+  name: String!
+  contentType: String!
+  url: String! @isUnique
+  secret: String! @isUnique
+  size: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type User implements Node {
+  id: ID! @isUnique
+  auth0UserId: String @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
 type Address implements Node {
   id: ID! @isUnique
-  flat: String
-  street: String!
-  city: String!
+  flat: String!
+  street: String
+  city: String
   postalCode: String!
-  sponsor: Sponsor! @relation(name: "SponsorAddress")
+  sponsor: Sponsor @relation(name: "SponsorAddress")
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -16,10 +34,10 @@ type Sponsor implements Node {
   avatar: String
   website: String
   email: String!
-  address: Address! @relation(name: "SponsorAddress")
+  address: Address @relation(name: "SponsorAddress")
   seats: Int!
-  jobs: [Job!] @relation(name: "SponsorJobs")
-  workshops: [Workshop!] @relation(name: "WorkshopSponsor")
+  jobs: [Job!]! @relation(name: "SponsorJobs")
+  workshops: [Workshop!]! @relation(name: "WorkshopSponsor")
   chapter: Chapter! @relation(name: "ChapterSponsor")
   numberOfCoaches: Int!
   imageCache: String
@@ -66,14 +84,15 @@ type Member implements Node {
   email: String!
   mobile: String
   twitter: String!
-  bio: String!
+  aboutYou: String!
   pronouns: String
   role: Role! @relation(name: "MemberRole")
   subscriptions: [Chapter!]! @relation(name: "ChapterMembers")
   workshopsAttended: [Workshop!]! @relation(name: "WorkshopMembers")
-  jobApprovals: [Job] @relation(name: "JobApprovals")
-  jobPostings: [Job] @relation(name: "JobPostings")
-  bans: [Ban] @relation(name: "MemberBans")
+  jobApprovals: [Job!]! @relation(name: "JobApprovals")
+  jobPostings: [Job!]! @relation(name: "JobPostings")
+  bans: [Ban!]! @relation(name: "MemberBans")
+  adminBans: [Ban!]! @relation(name: "AdminBans")
   receivedCoachWelcomeEmail: Boolean!
   receivedStudentWelcomeEmail: Boolean!
   canLogIn: Boolean!
@@ -81,7 +100,7 @@ type Member implements Node {
   updatedAt: DateTime!
 }
 
-type Role {
+type Role implements Node {
   id: ID! @isUnique
   name: String!
   members: [Member!]! @relation(name: "MemberRole")
@@ -109,76 +128,12 @@ type Job implements Node {
 type Ban implements Node {
   id: ID! @isUnique
   member: Member! @relation(name: "MemberBans")
-  addedById: Int!
+  admin: Member! @relation(name: "AdminBans")
   reason: String!
   note: String
   explanation: String!
   permanent: Boolean!
   expiresAt: DateTime!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-#-------------------------------------------------------------------------------
-
-type AuthService implements Node {
-  id: ID! @isUnique
-  memberId: Int!
-  provider: String!
-  uid: Int!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type Event implements Node {
-  id: ID! @isUnique
-  venueId: Int!
-  name: String!
-  description: String!
-  slug: String!
-  schedule: String!
-  coachSpaces: Int!
-  studentSpaces: Int!
-  coachQuestionnaire: String!
-  studentQuestionnaire: String!
-  coachDescription: String!
-  info: String!
-  announceOnly: Boolean!
-  url: String!
-  email: String!
-  invitable: Boolean!
-  titoUrl: String!
-  showFaq: String!
-  audience: String!
-  displayStudents: Boolean!
-  displayCoaches: Boolean!
-  externalUrl: String!
-  confirmationRequired: Boolean!
-  surveysRequired: Boolean!
-  dateAndTime: DateTime!
-  endsAt: DateTime!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type Feedback implements Node {
-  id: ID! @isUnique
-  coachId: Int!
-  tutorialId: Int!
-  workshopId: Int!
-  request: String!
-  suggestions: String!
-  rating: String!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type Group implements Node {
-  id: ID! @isUnique
-  chapterId: Int!
-  name: String!
-  description: String!
-  mailingListId: Int!
   createdAt: DateTime!
   updatedAt: DateTime!
 }

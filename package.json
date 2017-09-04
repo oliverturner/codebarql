@@ -1,0 +1,28 @@
+{
+  "name": "codebarql",
+  "version": "1.0.0",
+  "description": "A GrpahQL tutorial using the Codebar dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverturner/codebarql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverturner/codebarql/issues"
+  },
+  "homepage": "https://github.com/oliverturner/codebarql#readme",
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "graphql-tag": "2.4.2",
+    "jest": "20.0.4",
+    "jest-transform-graphql": "2.1.0",
+    "pg": "7.3.0",
+    "write": "1.0.3"
+  }
+}
