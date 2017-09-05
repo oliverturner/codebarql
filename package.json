@@ -1,28 +1,36 @@
 {
   "name": "codebarql",
-  "version": "1.0.0",
   "description": "A GrpahQL tutorial using the Codebar dataset",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/oliverturner/codebarql/issues"
   },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "lokka": "1.7.0",
+    "lokka-transport-http": "1.6.1"
+  },
+  "devDependencies": {
+    "babel-jest": "21.0.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "graphql-tag": "2.4.2",
+    "jest": "21.0.1",
+    "jest-transform-graphql": "2.1.0",
+    "pg": "7.3.0",
+    "write": "1.0.3"
+  },
+  "homepage": "https://github.com/oliverturner/codebarql#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oliverturner/codebarql.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oliverturner/codebarql/issues"
-  },
-  "homepage": "https://github.com/oliverturner/codebarql#readme",
-  "devDependencies": {
-    "babel-jest": "20.0.3",
-    "graphql-tag": "2.4.2",
-    "jest": "20.0.4",
-    "jest-transform-graphql": "2.1.0",
-    "pg": "7.3.0",
-    "write": "1.0.3"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sponsors": "babel-node ./tools/scripts/transmit.js"
   }
 }

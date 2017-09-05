@@ -18,6 +18,7 @@ type User implements Node {
 
 type Address implements Node {
   id: ID! @isUnique
+  dbId: Int!
   flat: String!
   street: String
   city: String
@@ -29,14 +30,15 @@ type Address implements Node {
 
 type Sponsor implements Node {
   id: ID! @isUnique
+  dbId: Int!
   name: String!
   description: String
   avatar: String
   website: String
-  email: String!
+  email: String
   address: Address @relation(name: "SponsorAddress")
   seats: Int!
-  jobs: [Job!]! @relation(name: "SponsorJobs")
+  jobs: [Job!] @relation(name: "SponsorJobs")
   workshops: [Workshop!]! @relation(name: "WorkshopSponsor")
   chapter: Chapter! @relation(name: "ChapterSponsor")
   numberOfCoaches: Int!
@@ -49,6 +51,7 @@ type Sponsor implements Node {
 
 type Chapter implements Node {
   id: ID! @isUnique
+  dbId: Int!
   name: String!
   city: String!
   email: String!
@@ -64,6 +67,7 @@ type Chapter implements Node {
 
 type Workshop implements Node {
   id: ID! @isUnique
+  dbId: Int!
   chapter: Chapter @relation(name: "ChapterWorkshops")
   attendees: [Member!]! @relation(name: "WorkshopMembers")
   sponsor: Sponsor! @relation(name: "WorkshopSponsor")
@@ -79,6 +83,7 @@ type Workshop implements Node {
 
 type Member implements Node {
   id: ID! @isUnique
+  dbId: Int!
   firstname: String!
   surname: String!
   email: String!
@@ -102,6 +107,7 @@ type Member implements Node {
 
 type Role implements Node {
   id: ID! @isUnique
+  dbId: Int!
   name: String!
   members: [Member!]! @relation(name: "MemberRole")
   createdAt: DateTime!
@@ -110,6 +116,7 @@ type Role implements Node {
 
 type Job implements Node {
   id: ID! @isUnique
+  dbId: Int!
   approvedBy: Member @relation(name: "JobApprovals")
   createdBy: Member @relation(name: "JobPostings")
   title: String!
@@ -127,6 +134,7 @@ type Job implements Node {
 
 type Ban implements Node {
   id: ID! @isUnique
+  dbId: Int!
   member: Member! @relation(name: "MemberBans")
   admin: Member! @relation(name: "AdminBans")
   reason: String!
