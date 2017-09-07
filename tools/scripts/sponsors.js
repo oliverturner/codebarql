@@ -1,77 +1,69 @@
 const writeFile = require("write");
 const { Client } = require("pg");
-const connectionString =
-  "postgresql://codebar:codebar@localhost:5432/codebar-production";
+const { Lokka } = require("lokka");
+const { Transport } = require("lokka-transport-http");
+const _ = require("lodash");
 
-const client = new Client({
-  connectionString: connectionString
+process.env.TZ = "UTC";
+
+const dbUrl = "postgresql://codebar@0.0.0.0:5432/codebar-production";
+const dbClient = new Client({ connectionString: dbUrl });
+
+const gqlClient = new Lokka({
+  transport: new Transport(
+    "https://api.graph.cool/simple/v1/cj6w1qgsw03m70112bnc6etxj"
+  )
 });
-client.connect();
 
-const query = `
-SELECT
-s.id AS "dbId", s.name, s.description, s.avatar, s.website, s.seats, s.email, 
-s.number_of_coaches AS "numberOfCoaches",
-s.image_cache AS "imageCache",
-s.contact_first_name AS "contactFirstname",
-s.contact_surname AS "contactSurname",
-s.created_at AS "dbCreatedAt",
-s.updated_at AS "dbUpdatedAt",
+const query = `SELECT * from sponsors`;
+const dest = "./__fixtures__/simple/sponsors.json";
+const onError = err => console.log(err);
 
-json_build_object(
-  'dbId', c.id, 
-  'dbCreatedAt', c.created_at,
-  'dbUpdatedAt', c.updated_at,
-  'name', c.name, 
-  'city', c.city,
-  'email', c.email,
-  'twitter', c.twitter,
-  'slug', c.slug, 
-  'active', c.active
-) AS chapter,
+const createSponsor = async s => {
+  try {
+    const result = await gqlClient.mutate(`{
+      sponsor: createSponsor(
+        dbId: ${s.id}
+        dbCreatedAt: "${new Date(Date.parse(s.created_at)).toISOString()}"
+        dbUpdatedAt: "${new Date(Date.parse(s.updated_at)).toISOString()}"
+        name: "${s.name}"
+        description: "${s.description}"
+        avatar: "${s.avatar}"
+        website: "${s.website}"
+        seats: ${s.seats}
+        imageCache: "${s.image_cache}"
+        numberOfCoaches: ${s.number_of_coaches ? s.number_of_coaches : 0}
+        email: "${s.email}"
+        contactFirstname: "${s.contact_first_name || ""}"
+        contactSurname: "${s.contact_surname || ""}"
+      ) {
+        id
+      }
+    }`);
 
-json_build_object(
-  'dbId', a.id, 
-  'dbCreatedAt', a.created_at,
-  'dbUpdatedAt', a.updated_at,
-  'flat', a.flat, 
-  'street', a.street, 
-  'city', a.city,
-  'postalCode', a.postal_code
-) AS address,
-
-json_agg(json_build_object(
-  'dbId', w.id,
-  'dbCreatedAt', w.created_at,
-  'dbUpdatedAt', w.updated_at,
-  'time', w.time,
-  'invitable', w.invitable,
-  'dateAndTime', w.date_and_time,
-  'rsvpOpenTime', w.rsvp_open_time,
-  'rsvpCloseTime', w.rsvp_close_time,
-  'rsvpOpenDate', w.rsvp_open_date
-)) AS workshops
-
-FROM sponsors s
-JOIN addresses a ON a.sponsor_id=s.id
-JOIN workshop_sponsors ws ON ws.sponsor_id=s.id
-JOIN workshops w ON ws.workshop_id=w.id
-JOIN chapters c ON c.id=w.chapter_id
-GROUP BY s.id, a.id, c.id
-ORDER BY s.created_at
-LIMIT 10
-`;
-
-client.query(query, null, (err, res) => {
-  if (res && res.rows) {
-    writeFile(
-      "./__fixtures__/aggregated/sponsors.json",
-      JSON.stringify(res.rows),
-      err => console.log(err)
-    );
-  } else {
-    console.log(err ? err.stack : res.rows && res.rows[0]); // Hello 'rld', rld,!
+    return result.sponsor.id;
+  } catch (e) {
+    console.log(e);
   }
+};
 
-  client.end();
-});
+const createSponsors = async () => {
+  await dbClient.connect();
+
+  const res = await dbClient.query(query);
+  const ids = await Promise.all(res.rows.map(createSponsor));
+
+  await dbClient.end();
+
+  return _.zipObject(ids, res.rows.map(sponsor => sponsor.id));
+};
+
+const init = async () => {
+  const ids = await createSponsors();
+
+  writeFile(dest, JSON.stringify(ids, null, 2), onError);
+
+  console.log(`Created ${Object.keys(ids).length} sponsors`);
+};
+
+init().catch(e => console.error(e));
