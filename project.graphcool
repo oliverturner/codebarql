@@ -1,0 +1,196 @@
+# project: cj6w1qgsw03m70112bnc6etxj
+# version: 27
+
+type File implements Node {
+  id: ID! @isUnique
+  name: String!
+  contentType: String!
+  url: String! @isUnique
+  secret: String! @isUnique
+  size: Int!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type User implements Node {
+  id: ID! @isUnique
+  auth0UserId: String @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Address implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  flat: String
+  street: String
+  city: String
+  postalCode: String!
+  sponsor: Sponsor @relation(name: "SponsorAddress")
+  events: [Event!]! @relation(name: "EventAddress")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Sponsor implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  name: String!
+  description: String
+  avatar: String
+  website: String
+  email: String
+  address: Address @relation(name: "SponsorAddress")
+  seats: Int!
+  workshops: [Workshop!]! @relation(name: "WorkshopSponsor")
+  chapter: Chapter @relation(name: "ChapterSponsor")
+  numberOfCoaches: Int
+  imageCache: String
+  contactFirstname: String
+  contactSurname: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Chapter implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  name: String!
+  city: String!
+  email: String!
+  twitter: String
+  slug: String!
+  active: Boolean!
+  workshops: [Workshop!]! @relation(name: "ChapterWorkshops")
+  members: [Member!]! @relation(name: "ChapterMembers")
+  sponsors: [Sponsor!]! @relation(name: "ChapterSponsor")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Workshop implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  chapter: Chapter @relation(name: "ChapterWorkshops")
+  attendees: [Member!]! @relation(name: "WorkshopMembers")
+  sponsor: Sponsor! @relation(name: "WorkshopSponsor")
+  invitable: Boolean!
+  time: DateTime!
+  dateAndTime: DateTime!
+  rsvpCloseTime: DateTime!
+  rsvpOpenTime: DateTime!
+  rsvpOpenDate: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Member implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  firstname: String
+  surname: String
+  email: String!
+  mobile: String
+  twitter: String
+  aboutYou: String
+  pronouns: String
+  role: Role! @relation(name: "MemberRole")
+  subscriptions: [Chapter!]! @relation(name: "ChapterMembers")
+  workshopsAttended: [Workshop!]! @relation(name: "WorkshopMembers")
+  jobApprovals: [Job!]! @relation(name: "JobApprovals")
+  jobPostings: [Job!]! @relation(name: "JobPostings")
+  bans: [Ban!]! @relation(name: "MemberBans")
+  adminBans: [Ban!]! @relation(name: "AdminBans")
+  receivedCoachWelcomeEmail: Boolean!
+  receivedStudentWelcomeEmail: Boolean!
+  canLogIn: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Role implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  name: String!
+  members: [Member!]! @relation(name: "MemberRole")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Job implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  title: String
+  description: String
+  location: String
+  email: String
+  linkToJob: String
+  approved: Boolean!
+  submitted: Boolean!
+  expiryDate: DateTime!
+  approvedBy: Member @relation(name: "JobApprovals")
+  createdBy: Member @relation(name: "JobPostings")
+  company: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Ban implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  member: Member! @relation(name: "MemberBans")
+  admin: Member! @relation(name: "AdminBans")
+  reason: String!
+  note: String
+  explanation: String!
+  permanent: Boolean!
+  expiresAt: DateTime!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Event implements Node {
+  id: ID! @isUnique
+  dbId: Int!
+  dbCreatedAt: DateTime!
+  dbUpdatedAt: DateTime!
+  name: String!
+  description: String
+  dateAndTime: DateTime!
+  endsAt: DateTime!
+  address: Address @relation(name: "EventAddress")
+  slug: String
+  schedule: String
+  coachSpaces: Int!
+  studentSpaces: Int!
+  coachQuestionnaire: String
+  studentQuestionnaire: String
+  coachDescription: String
+  info: String
+  announceOnly: Boolean!
+  url: String
+  email: String
+  invitable: Boolean!
+  titoUrl: String
+  showFaq: Boolean!
+  displayStudents: Boolean!
+  displayCoaches: Boolean!
+  externalUrl: String
+  confirmationRequired: Boolean!
+  surveysRequired: Boolean!
+  audience: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

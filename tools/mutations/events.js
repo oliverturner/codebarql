@@ -1,23 +1,4 @@
-const writeFile = require("write");
-const { Client } = require("pg");
-const { Lokka } = require("lokka");
-const { Transport } = require("lokka-transport-http");
-const _ = require("lodash");
-
-process.env.TZ = "UTC";
-
-const dbUrl = "postgresql://codebar@0.0.0.0:5432/codebar-production";
-const dbClient = new Client({ connectionString: dbUrl });
-
-const gqlClient = new Lokka({
-  transport: new Transport(
-    "https://api.graph.cool/simple/v1/cj6w1qgsw03m70112bnc6etxj"
-  )
-});
-
-const query = `SELECT * from events`;
-const dest = "./__fixtures__/simple/events.json";
-const onError = err => console.log(err);
+import gqlClient from "./_client";
 
 const createRecord = async row => {
   try {
@@ -55,7 +36,7 @@ const createRecord = async row => {
       }
     }`);
 
-    console.log("result:", result)
+    console.log(result)
 
     return result.event.id;
   } catch (e) {
@@ -63,23 +44,4 @@ const createRecord = async row => {
   }
 };
 
-const createRecords = async () => {
-  await dbClient.connect();
-
-  const res = await dbClient.query(query);
-  const ids = await Promise.all(res.rows.map(createRecord));
-
-  await dbClient.end();
-
-  return _.zipObject(ids, res.rows.map(row => row.id));
-};
-
-const init = async () => {
-  const ids = await createRecords();
-
-  writeFile(dest, JSON.stringify(ids, null, 2), onError);
-
-  console.log(`Created ${Object.keys(ids).length} records`);
-};
-
-init().catch(e => console.error(e));
+export default createRecord;
