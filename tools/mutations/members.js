@@ -19,6 +19,11 @@ const createRecord = async row => {
       id
     }
   }`);
+
+  return { 
+    id: result.member.id,
+    dbId: row.id
+  };
 };
 
 export default createRecord;

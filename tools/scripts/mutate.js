@@ -14,37 +14,51 @@ process.env.TZ = "UTC";
 
 const onError = err => console.log(err);
 
-async function _map([head, ...rest], fn, acc = []) {
-  if (!head) {
-    return acc;
-  }
-
-  return _map(rest, fn, [...acc, await fn(head)]);
-};
-const movies = ['lost in translation', 'donnie darko'];
-const search = movie =>
-  new Promise(resolve => setTimeout(() => resolve(movie.toUpperCase()), 1000));
-
-
 const createRecords = async () => {
   const dbUrl = "postgresql://codebar@0.0.0.0:5432/codebar-production";
   const dbClient = new Client({ connectionString: dbUrl });
-  const dbQuery = `SELECT * from ${table} LIMIT 1000`;
+  const dbQuery = `SELECT * from ${table}`;
 
   await dbClient.connect();
 
   const res = await dbClient.query(dbQuery);
   const chunks = getChunkedRows(res.rows, chunkNum);
   // const ids = await Promise.all(chunks.map(createChunk(mutation)));
-  const ids = await Promise.all(
-    // chunks.map(async (chunk, index) => {
-    //   console.log(`[${getRange(index, chunk.length).join("-")}] start`);
-    //   const chunkIds = await Promise.all(chunk.map(mutation));
-    //   console.log(`[${getRange(index, chunk.length).join("-")}] end`);
+  // const ids = await Promise.all(
+  // chunks.map(async (chunk, index) => {
+  //   console.log(`[${getRange(index, chunk.length).join("-")}] start`);
+  //   const chunkIds = await Promise.all(chunk.map(mutation));
+  //   console.log(`[${getRange(index, chunk.length).join("-")}] end`);
 
-    //   return chunkIds;
-    // })
-  );
+  //   return chunkIds;
+  // })
+  // );
+
+  const sendRecords = (resolve, reject) => {
+    const ids = [];
+    async function sendRecord(sendIndex = 0) {
+      try {
+        const chunk = chunks[sendIndex];
+        if (chunk) {
+          console.log(`Posting ${getRange(sendIndex, chunk.length).join("-")}`);
+          ids.push(await Promise.all(chunk.map(mutation)));
+
+          return sendRecord(sendIndex + 1);
+        }
+
+        resolve(ids);
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    sendRecord();
+  };
+
+  const ids = await new Promise((resolve, reject) => {
+    console.log("sending records!");
+    sendRecords(resolve);
+  });
 
   await dbClient.end();
 
@@ -53,10 +67,8 @@ const createRecords = async () => {
 
 const init = async () => {
   const dest = `./__fixtures__/simple/${table}.json`;
-  // const ids = await createRecords();
-  const ids = await _map(movies, movie => search(movie));
-  console.log(ids);
-  
+  const ids = await createRecords();
+
   writeFile(dest, JSON.stringify(ids, null, 2), onError);
 
   console.log(`Created ${Object.keys(ids).length} records`);
