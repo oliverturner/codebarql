@@ -1,5 +1,5 @@
 # project: cj6w1qgsw03m70112bnc6etxj
-# version: 27
+# version: 28
 
 type File implements Node {
   id: ID! @isUnique
@@ -150,8 +150,8 @@ type Ban implements Node {
   dbId: Int!
   dbCreatedAt: DateTime!
   dbUpdatedAt: DateTime!
-  member: Member! @relation(name: "MemberBans")
-  admin: Member! @relation(name: "AdminBans")
+  member: Member @relation(name: "MemberBans")
+  admin: Member @relation(name: "AdminBans")
   reason: String!
   note: String
   explanation: String!

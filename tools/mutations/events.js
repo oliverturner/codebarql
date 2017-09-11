@@ -8,17 +8,17 @@ const createRecord = async row => {
         dbCreatedAt: "${new Date(Date.parse(row.created_at)).toISOString()}"
         dbUpdatedAt: "${new Date(Date.parse(row.updated_at)).toISOString()}"
         name: "${row.name}"
-        description: "${row.description}"
+        description: ${JSON.stringify(row.description || "")}
         dateAndTime: "${new Date(Date.parse(row.date_and_time)).toISOString()}"
         endsAt: "${new Date(Date.parse(row.ends_at)).toISOString()}"
         slug: "${row.slug}"
-        schedule: "${row.schedule}"
-        coachSpaces: ${row.coach_spaces}
-        studentSpaces: ${row.student_spaces}
+        schedule: ${JSON.stringify(row.schedule || "")}
+        coachSpaces: ${row.coach_spaces || 0}
+        studentSpaces: ${row.student_spaces || 0}
         coachQuestionnaire: "${row.coach_questionnaire}"
         studentQuestionnaire: "${row.student_questionnaire}"
         coachDescription: "${row.coach_description}"
-        info: "${row.info}"
+        info: ${JSON.stringify(row.info || "")}
         announceOnly: ${row.announce_only}
         url: "${row.url}"
         email: "${row.email}"
@@ -36,10 +36,11 @@ const createRecord = async row => {
       }
     }`);
 
-    console.log(result)
-
-    return result.event.id;
-  } catch (e) {
+    return { 
+      id: result.member.id,
+      dbId: row.id
+    };
+  } catch (e) {a
     console.log(e);
   }
 };

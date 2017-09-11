@@ -18,7 +18,10 @@ const createRecord = async row => {
       }
     }`);
 
-    return result.chapter.id;
+    return { 
+      id: result.chapter.id,
+      dbId: row.id
+    };
   } catch (e) {
     console.log(e);
   }

@@ -3,7 +3,7 @@ import { Client } from "pg";
 import _ from "lodash";
 import { argv } from "yargs";
 
-const table = argv.table;
+const table = argv.table || argv.t;
 const mutation = require(`../mutations/${table}`).default;
 
 process.env.TZ = "UTC";
@@ -11,7 +11,7 @@ process.env.TZ = "UTC";
 const dbUrl = "postgresql://codebar@0.0.0.0:5432/codebar-production";
 const dbClient = new Client({ connectionString: dbUrl });
 
-const query = `SELECT * from ${table}`;
+const query = `SELECT * from ${table} LIMIT 1000 OFFSET 1000`;
 const dest = `./__fixtures__/simple/${table}.json`;
 const onError = err => console.log(err);
 
@@ -20,12 +20,10 @@ const createRecords = async () => {
 
   const res = await dbClient.query(query);
   const ids = await Promise.all(res.rows.map(mutation));
-
-  console.log(ids)
   
   await dbClient.end();
 
-  return _.zipObject(ids, res.rows.map(row => row.id));
+  return ids;
 };
 
 const init = async () => {
