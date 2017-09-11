@@ -8,7 +8,7 @@ const createRecord = async s => {
         dbCreatedAt: "${new Date(Date.parse(s.created_at)).toISOString()}"
         dbUpdatedAt: "${new Date(Date.parse(s.updated_at)).toISOString()}"
         title: "${s.title}"
-        description: "${s.description}"
+        description: ${JSON.stringify(s.description)}
         location: "${s.location}"
         email: "${s.email}"
         linkToJob: "${s.link_to_job}"
