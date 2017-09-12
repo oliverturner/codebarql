@@ -43,13 +43,13 @@ const main = async() => {
     await createPosts()
   } else {
     // query total members:
-    const membersMeta = await client.query(`{
+    const itemMeta = await client.query(`{
       meta: _allMembersMeta {
         count
       }
     }`)
 
-    console.log(`Deleting ${membersMeta.meta.count} members...`)
+    console.log(`Deleting ${itemMeta.meta.count} items...`)
     await deleteBatch()
   }
 

@@ -1,30 +1,31 @@
-import gqlClient from "./_client";
+import request from "../scripts/request";
 
-const createRecord = async s => {
-  try {
-    const result = await gqlClient.mutate(`{
-      job: createJob(
-        dbId: ${s.id}
-        dbCreatedAt: "${new Date(Date.parse(s.created_at)).toISOString()}"
-        dbUpdatedAt: "${new Date(Date.parse(s.updated_at)).toISOString()}"
-        title: "${s.title}"
-        description: ${JSON.stringify(s.description)}
-        location: "${s.location}"
-        email: "${s.email}"
-        linkToJob: "${s.link_to_job}"
-        approved: ${s.approved === "t"}
-        submitted: ${s.submitted === "t"}
-        company: "${s.company}"
-        expiryDate: "${new Date(Date.parse(s.expiry_date)).toISOString()}"
-      ) {
-        id
-      }
-    }`);
-
-    return result && result.job.id;
-  } catch (e) {
-    console.log(e);
+const query = row => `
+  job: createJob(
+    dbId: ${row.id}
+    dbCreatedAt: "${new Date(Date.parse(row.created_at)).toISOString()}"
+    dbUpdatedAt: "${new Date(Date.parse(row.updated_at)).toISOString()}"
+    title: ${JSON.stringify(row.title)}
+    description: ${JSON.stringify(row.description)}
+    location: ${JSON.stringify(row.location)}
+    email: ${JSON.stringify(row.email)}
+    linkToJob: ${JSON.stringify(row.link_to_job)}
+    approved: ${row.approved === "t"}
+    submitted: ${row.submitted === "t"}
+    company: ${JSON.stringify(row.company)}
+    expiryDate: "${new Date(Date.parse(row.expiry_date)).toISOString()}"
+  ) {
+    id
   }
+`;
+
+const createRecord = async row => {
+  const result = await request(query(row));
+
+  return {
+    id: result.job.id,
+    dbId: row.id
+  };
 };
 
 export default createRecord;

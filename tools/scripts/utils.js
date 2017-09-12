@@ -8,7 +8,7 @@ export const getChunkedRows = (rows, chunkNum) => {
   );
 };
 
-// export const createChunk = (mutation) => (chunk, index) => {
+// export const createChunk = (mutation) => async (chunk, index) => {
 //   console.log(`[${getRange(index, chunk.length).join("-")}] start`);
 //   const chunkIds = await Promise.all(chunk.map(mutation));
 //   console.log(`[${getRange(index, chunk.length).join("-")}] end`);

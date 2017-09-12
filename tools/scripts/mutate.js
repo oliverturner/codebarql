@@ -8,13 +8,28 @@ import { getChunkedRows, getRange } from "./utils";
 
 const table = argv.table || argv.t;
 const mutation = require(`../mutations/${table}`).default;
-const chunkNum = 100;
+const chunkNum = 50;
 
 process.env.TZ = "UTC";
 
 const onError = err => console.log(err);
 
-const createRecords = async () => {
+const sendChunk = async chunk => {
+  return await Promise.all(chunk.map(mutation));
+};
+
+const sendChunks = async (arr, final) => {
+  return await arr.reduce((promise, item) => {
+    return promise
+      .then(result => {
+        console.log(final.length)
+        return sendChunk(item).then(result => final.push(result));
+      })
+      .catch(console.error);
+  }, Promise.resolve());
+};
+
+const createRecords = async (records) => {
   const dbUrl = "postgresql://codebar@0.0.0.0:5432/codebar-production";
   const dbClient = new Client({ connectionString: dbUrl });
   const dbQuery = `SELECT * from ${table}`;
@@ -23,55 +38,20 @@ const createRecords = async () => {
 
   const res = await dbClient.query(dbQuery);
   const chunks = getChunkedRows(res.rows, chunkNum);
-  // const ids = await Promise.all(chunks.map(createChunk(mutation)));
-  // const ids = await Promise.all(
-  // chunks.map(async (chunk, index) => {
-  //   console.log(`[${getRange(index, chunk.length).join("-")}] start`);
-  //   const chunkIds = await Promise.all(chunk.map(mutation));
-  //   console.log(`[${getRange(index, chunk.length).join("-")}] end`);
-
-  //   return chunkIds;
-  // })
-  // );
-
-  const sendRecords = (resolve, reject) => {
-    const ids = [];
-    async function sendRecord(sendIndex = 0) {
-      try {
-        const chunk = chunks[sendIndex];
-        if (chunk) {
-          console.log(`Posting ${getRange(sendIndex, chunk.length).join("-")}`);
-          ids.push(await Promise.all(chunk.map(mutation)));
-
-          return sendRecord(sendIndex + 1);
-        }
-
-        resolve(ids);
-      } catch (e) {
-        reject(e);
-      }
-    }
-
-    sendRecord();
-  };
-
-  const ids = await new Promise((resolve, reject) => {
-    console.log("sending records!");
-    sendRecords(resolve);
-  });
+  await sendChunks(chunks, records);
 
   await dbClient.end();
 
-  return ids;
+  return records;
 };
 
 const init = async () => {
   const dest = `./__fixtures__/simple/${table}.json`;
-  const ids = await createRecords();
+  const ids = await createRecords([]);
 
   writeFile(dest, JSON.stringify(ids, null, 2), onError);
 
-  console.log(`Created ${Object.keys(ids).length} records`);
+  console.log(`Created ${ids.reduce((n, x) => n + x.length, 0)} records`);
 };
 
 init().catch(e => console.error(e));
